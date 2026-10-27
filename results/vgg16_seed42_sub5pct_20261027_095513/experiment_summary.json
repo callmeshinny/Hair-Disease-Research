@@ -1,0 +1,38 @@
+{
+  "run_name": "vgg16_seed42_sub5pct_20261027_095513",
+  "seed": 42,
+  "mixed_precision": false,
+  "preprocess": "repo_01",
+  "fine_tune_from_layer": "block5_conv1",
+  "selected_checkpoint": "phase2",
+  "n_images": {
+    "train": 410,
+    "val": 88,
+    "test": 88
+  },
+  "val": {
+    "val_loss": 1.6171694993972778,
+    "val_acc": 0.46590909361839294
+  },
+  "test_metrics": {
+    "accuracy": 0.48863636363636365,
+    "balanced_accuracy": 0.4833333333333332,
+    "macro_precision": 0.47936868686868694,
+    "macro_recall": 0.4833333333333332,
+    "macro_f1": 0.44987615166775585,
+    "weighted_f1": 0.4535665187511139,
+    "cohen_kappa": 0.43119793162884223,
+    "macro_auc_ovr": 0.8319503779887482
+  },
+  "test_bootstrap_ci": {
+    "accuracy_ci95": [
+      0.375,
+      0.5909090909090909
+    ],
+    "macro_f1_ci95": [
+      0.34245973474335306,
+      0.5315471667221667
+    ]
+  },
+  "tf_version": "2.15.1"
+}

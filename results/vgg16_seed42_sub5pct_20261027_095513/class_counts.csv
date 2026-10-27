@@ -1,0 +1,12 @@
+,train,val,test,all
+Alopecia Areata,42,9,9,60
+Contact Dermatitis,42,9,9,60
+Folliculitis,42,9,9,60
+Head Lice,42,9,9,60
+Lichen Planus,42,9,9,60
+Male Pattern Baldness,39,8,8,55
+Psoriasis,39,8,8,55
+Seborrheic Dermatitis,40,9,9,58
+Telogen Effluvium,40,9,9,58
+Tinea Capitis,42,9,9,60
+TOTAL,410,88,88,586

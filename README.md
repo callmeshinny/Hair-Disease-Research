@@ -8,15 +8,14 @@ outside GitHub.
 
 ## Results at a glance
 
-The table reports the final metric from each completed evaluation. For
-single-model runs, metrics are from the held-out test split. For VGG16, only
-the completed five-fold CV ensemble is reported; its single-model 5% run was
-not complete and is not included.
+The table reports the final single-model metric from each completed run.
+Accuracy and Macro-F1 are calculated on the held-out test split. The completed
+cross-validation runs are listed separately below.
 
 | Model | Dataset | Train | Validation | Test | Evaluation | Accuracy | Macro-F1 |
 |---|---|---:|---:|---:|---|---:|---:|
 | ResNet50V2 | fixed 5% subset | 410 | 88 | 88 | single model | 69.32% | 68.41% |
-| VGG16 | fixed 5% subset | 410 | 88 | 88 | 5-fold CV ensemble | 53.41% | 51.77% |
+| VGG16 | fixed 5% subset | 410 | 88 | 88 | single model | 48.86% | 44.99% |
 | InceptionV3 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 99.20% | 99.19% |
 | DenseNet169 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 98.46% | 98.45% |
 | MobileNetV2 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 98.86% | 98.85% |
@@ -35,6 +34,7 @@ checkpoints are excluded.
 
 - [ResNet50V2 5% single model](results/resnet50v2_seed42_sub5pct_20261027_090212/)
 - [ResNet50V2 5% five-fold CV](results/resnet50v2_cv5_seed42_sub5pct_20261027_090425/)
+- [VGG16 5% single model](results/vgg16_seed42_sub5pct_20261027_095513/)
 - [VGG16 5% five-fold CV](results/vgg16_cv5_seed42_sub5pct_20261026_083745/)
 - [InceptionV3 full-data single model](results/inceptionv3_seed42_20261023_161640/)
 - [DenseNet169 full-data single model](results/densenet169_seed42_20261023_165946/)
