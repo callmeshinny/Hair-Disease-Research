@@ -1,0 +1,15 @@
+# Local datasets and generated archives
+data_processed/
+data_raw/
+_tmp_cache_cv/
+_tmp_ckpt_cv/
+
+# Large binary model artifacts
+*.keras
+*.h5
+*.weights.h5
+
+# Local/editor/runtime files
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/

@@ -1,0 +1,38 @@
+{
+  "run_name": "vgg16_seed42_20261023_181404",
+  "seed": 42,
+  "mixed_precision": true,
+  "preprocess": "repo_01",
+  "fine_tune_from_layer": "block5_conv1",
+  "selected_checkpoint": "phase2",
+  "n_images": {
+    "train": 8185,
+    "val": 1755,
+    "test": 1753
+  },
+  "val": {
+    "val_loss": 0.05420880392193794,
+    "val_acc": 0.9829059839248657
+  },
+  "test_metrics": {
+    "accuracy": 0.9897318881916715,
+    "balanced_accuracy": 0.9896557671159407,
+    "macro_precision": 0.9897306536725632,
+    "macro_recall": 0.9896557671159407,
+    "macro_f1": 0.9896755605784362,
+    "weighted_f1": 0.9897130514812568,
+    "cohen_kappa": 0.9885899220741652,
+    "macro_auc_ovr": 0.9999231780749508
+  },
+  "test_bootstrap_ci": {
+    "accuracy_ci95": [
+      0.9845835710211066,
+      0.9942954934398175
+    ],
+    "macro_f1_ci95": [
+      0.984208947376248,
+      0.9942035541278443
+    ]
+  },
+  "tf_version": "2.21.0"
+}

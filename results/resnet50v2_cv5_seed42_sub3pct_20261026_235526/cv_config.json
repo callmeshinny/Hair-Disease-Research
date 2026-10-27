@@ -1,0 +1,40 @@
+{
+  "CV_SMOKE_TEST": false,
+  "CV_FOLDS_TO_RUN": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "CV_BATCH": 16,
+  "N_FOLDS": 5,
+  "CV_EPOCHS_P1": 10,
+  "CV_ES_P1": 4,
+  "CV_EPOCHS_P2": 25,
+  "CV_ES_P2": 6,
+  "GROUP_THR": 4,
+  "INNER_SPLITS": 10,
+  "CV_SAVE_FOLD_MODELS": false,
+  "SUFFIX": "_sub3pct",
+  "CV_FOLDS_DIR": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/cv5_folds_seed42_sub3pct",
+  "CV_RUN_NAME": "resnet50v2_cv5_seed42_sub3pct_20261026_235526",
+  "CV_RUN_DIR": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/resnet50v2_cv5_seed42_sub3pct_20261026_235526",
+  "CV_CKPT_DIR": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/resnet50v2_cv5_seed42_sub3pct_20261026_235526/_tmp_ckpt",
+  "DATA_MODE": "subset",
+  "USE_SUBSET": true,
+  "SUBSET_FRACTION": 0.03,
+  "SEED": 42,
+  "MODEL_NAME": "resnet50v2",
+  "IMG_SIZE": [
+    224,
+    224
+  ],
+  "DENSE_UNITS": 512,
+  "DROPOUT": 0.5,
+  "PREPROCESS": "tf",
+  "LR_P1": 0.001,
+  "LR_P2": 1e-05,
+  "FINE_TUNE_FROM_LAYER": "conv5_block1_preact_bn",
+  "MIXED_PRECISION": false
+}

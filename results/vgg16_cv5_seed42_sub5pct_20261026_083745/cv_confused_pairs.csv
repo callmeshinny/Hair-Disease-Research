@@ -1,0 +1,63 @@
+true,predicted_as,count
+Folliculitis,Head Lice,15
+Seborrheic Dermatitis,Head Lice,14
+Psoriasis,Head Lice,10
+Psoriasis,Seborrheic Dermatitis,8
+Telogen Effluvium,Male Pattern Baldness,8
+Seborrheic Dermatitis,Folliculitis,7
+Tinea Capitis,Folliculitis,7
+Alopecia Areata,Male Pattern Baldness,6
+Tinea Capitis,Head Lice,6
+Folliculitis,Seborrheic Dermatitis,5
+Folliculitis,Telogen Effluvium,5
+Head Lice,Seborrheic Dermatitis,5
+Lichen Planus,Folliculitis,5
+Lichen Planus,Seborrheic Dermatitis,5
+Lichen Planus,Telogen Effluvium,5
+Telogen Effluvium,Lichen Planus,5
+Tinea Capitis,Lichen Planus,5
+Tinea Capitis,Seborrheic Dermatitis,5
+Lichen Planus,Head Lice,4
+Male Pattern Baldness,Alopecia Areata,4
+Psoriasis,Lichen Planus,4
+Telogen Effluvium,Folliculitis,4
+Tinea Capitis,Psoriasis,4
+Contact Dermatitis,Head Lice,3
+Contact Dermatitis,Psoriasis,3
+Contact Dermatitis,Seborrheic Dermatitis,3
+Psoriasis,Alopecia Areata,3
+Psoriasis,Folliculitis,3
+Telogen Effluvium,Alopecia Areata,3
+Telogen Effluvium,Head Lice,3
+Telogen Effluvium,Psoriasis,3
+Telogen Effluvium,Seborrheic Dermatitis,3
+Alopecia Areata,Tinea Capitis,2
+Contact Dermatitis,Telogen Effluvium,2
+Head Lice,Contact Dermatitis,2
+Male Pattern Baldness,Telogen Effluvium,2
+Seborrheic Dermatitis,Psoriasis,2
+Seborrheic Dermatitis,Telogen Effluvium,2
+Seborrheic Dermatitis,Tinea Capitis,2
+Tinea Capitis,Alopecia Areata,2
+Tinea Capitis,Contact Dermatitis,2
+Tinea Capitis,Telogen Effluvium,2
+Alopecia Areata,Psoriasis,1
+Alopecia Areata,Telogen Effluvium,1
+Contact Dermatitis,Folliculitis,1
+Folliculitis,Lichen Planus,1
+Folliculitis,Male Pattern Baldness,1
+Folliculitis,Psoriasis,1
+Folliculitis,Tinea Capitis,1
+Head Lice,Folliculitis,1
+Head Lice,Telogen Effluvium,1
+Lichen Planus,Psoriasis,1
+Lichen Planus,Tinea Capitis,1
+Male Pattern Baldness,Lichen Planus,1
+Psoriasis,Contact Dermatitis,1
+Psoriasis,Male Pattern Baldness,1
+Psoriasis,Telogen Effluvium,1
+Seborrheic Dermatitis,Alopecia Areata,1
+Seborrheic Dermatitis,Lichen Planus,1
+Telogen Effluvium,Contact Dermatitis,1
+Telogen Effluvium,Tinea Capitis,1
+Tinea Capitis,Male Pattern Baldness,1

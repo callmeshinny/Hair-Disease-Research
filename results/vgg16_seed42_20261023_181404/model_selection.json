@@ -1,0 +1,13 @@
+{
+  "selected": "phase2",
+  "phase1": {
+    "val_loss": 0.7677613496780396,
+    "val_acc": 0.7698005437850952,
+    "path": "/content/drive/MyDrive/Hair-Disease-Research/results/vgg16_seed42_20261023_181404/ckpt_phase1.keras"
+  },
+  "phase2": {
+    "val_loss": 0.05420880392193794,
+    "val_acc": 0.9829059839248657,
+    "path": "/content/drive/MyDrive/Hair-Disease-Research/results/vgg16_seed42_20261023_181404/ckpt_phase2.keras"
+  }
+}

@@ -1,0 +1,51 @@
+true,predicted_as,count
+Seborrheic Dermatitis,Head Lice,9
+Telogen Effluvium,Alopecia Areata,6
+Folliculitis,Lichen Planus,5
+Head Lice,Seborrheic Dermatitis,5
+Male Pattern Baldness,Telogen Effluvium,5
+Contact Dermatitis,Head Lice,4
+Psoriasis,Contact Dermatitis,4
+Seborrheic Dermatitis,Folliculitis,4
+Alopecia Areata,Male Pattern Baldness,3
+Folliculitis,Head Lice,3
+Lichen Planus,Head Lice,3
+Psoriasis,Alopecia Areata,3
+Psoriasis,Lichen Planus,3
+Telogen Effluvium,Contact Dermatitis,3
+Telogen Effluvium,Head Lice,3
+Telogen Effluvium,Seborrheic Dermatitis,3
+Tinea Capitis,Lichen Planus,3
+Tinea Capitis,Psoriasis,3
+Contact Dermatitis,Telogen Effluvium,2
+Folliculitis,Alopecia Areata,2
+Folliculitis,Seborrheic Dermatitis,2
+Folliculitis,Tinea Capitis,2
+Lichen Planus,Folliculitis,2
+Lichen Planus,Psoriasis,2
+Lichen Planus,Telogen Effluvium,2
+Male Pattern Baldness,Alopecia Areata,2
+Psoriasis,Seborrheic Dermatitis,2
+Seborrheic Dermatitis,Alopecia Areata,2
+Seborrheic Dermatitis,Lichen Planus,2
+Seborrheic Dermatitis,Psoriasis,2
+Telogen Effluvium,Male Pattern Baldness,2
+Tinea Capitis,Contact Dermatitis,2
+Tinea Capitis,Folliculitis,2
+Alopecia Areata,Head Lice,1
+Contact Dermatitis,Alopecia Areata,1
+Contact Dermatitis,Tinea Capitis,1
+Head Lice,Contact Dermatitis,1
+Head Lice,Lichen Planus,1
+Lichen Planus,Alopecia Areata,1
+Psoriasis,Folliculitis,1
+Psoriasis,Head Lice,1
+Psoriasis,Male Pattern Baldness,1
+Psoriasis,Telogen Effluvium,1
+Psoriasis,Tinea Capitis,1
+Seborrheic Dermatitis,Contact Dermatitis,1
+Seborrheic Dermatitis,Telogen Effluvium,1
+Seborrheic Dermatitis,Tinea Capitis,1
+Tinea Capitis,Alopecia Areata,1
+Tinea Capitis,Head Lice,1
+Tinea Capitis,Male Pattern Baldness,1
