@@ -1,0 +1,32 @@
+{
+  "DRIVE_DIR": "/content/drive/MyDrive/Hair-Disease-Research",
+  "SEED": 42,
+  "ZIP_PATH": "/content/drive/MyDrive/Hair-Disease-Research/data_processed/dataset_224_v3.zip",
+  "RESULTS_ROOT": "/content/drive/MyDrive/Hair-Disease-Research/results",
+  "DATA_DIR": "/content/dataset_224_v3",
+  "IMG_SIZE": [
+    224,
+    224
+  ],
+  "MODEL_NAME": "densenet169",
+  "BATCH": 32,
+  "MIXED_PRECISION": true,
+  "PREPROCESS": "repo_01",
+  "DENSE_UNITS": 512,
+  "DROPOUT": 0.5,
+  "EPOCHS_P1": 10,
+  "LR_P1": 0.001,
+  "ES_PATIENCE_P1": 4,
+  "EPOCHS_P2": 25,
+  "LR_P2": 1e-05,
+  "FINE_TUNE_FROM_LAYER": "conv5_block1_0_bn",
+  "ES_PATIENCE_P2": 6,
+  "AUG": {
+    "flip": "horizontal",
+    "rotation": 0.05,
+    "shift": 0.1,
+    "zoom": 0.1
+  },
+  "RUN_NAME": "densenet169_seed42_20261023_165946",
+  "RUN_DIR": "/content/drive/MyDrive/Hair-Disease-Research/results/densenet169_seed42_20261023_165946"
+}

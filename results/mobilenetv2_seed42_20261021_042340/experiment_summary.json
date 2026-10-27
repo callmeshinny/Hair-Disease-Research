@@ -1,0 +1,35 @@
+{
+  "run_name": "mobilenetv2_seed42_20261021_042340",
+  "seed": 42,
+  "selected_checkpoint": "phase2",
+  "n_images": {
+    "train": 8185,
+    "val": 1755,
+    "test": 1753
+  },
+  "val": {
+    "val_loss": 0.044629260897636414,
+    "val_acc": 0.9886040091514587
+  },
+  "test_metrics": {
+    "accuracy": 0.9885909868796349,
+    "balanced_accuracy": 0.9884345086729125,
+    "macro_precision": 0.9887596888997227,
+    "macro_recall": 0.9884345086729125,
+    "macro_f1": 0.9885180993412735,
+    "weighted_f1": 0.9885835064441334,
+    "cohen_kappa": 0.9873219935206925,
+    "macro_auc_ovr": 0.9998854196342732
+  },
+  "test_bootstrap_ci": {
+    "accuracy_ci95": [
+      0.9828864803194524,
+      0.9931545921277809
+    ],
+    "macro_f1_ci95": [
+      0.9826233983146668,
+      0.9931885004067007
+    ]
+  },
+  "tf_version": "2.21.0"
+}

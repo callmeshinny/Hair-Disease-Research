@@ -1,0 +1,13 @@
+{
+  "selected": "phase2",
+  "phase1": {
+    "val_loss": 0.09919843077659607,
+    "val_acc": 0.969800591468811,
+    "path": "/content/drive/MyDrive/Hair-Disease-Research/results/densenet169_seed42_20261023_165946/ckpt_phase1.keras"
+  },
+  "phase2": {
+    "val_loss": 0.03656776249408722,
+    "val_acc": 0.9874643683433533,
+    "path": "/content/drive/MyDrive/Hair-Disease-Research/results/densenet169_seed42_20261023_165946/ckpt_phase2.keras"
+  }
+}

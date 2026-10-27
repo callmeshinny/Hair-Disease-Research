@@ -1,0 +1,38 @@
+{
+  "run_name": "densenet169_seed42_20261023_165946",
+  "seed": 42,
+  "mixed_precision": true,
+  "preprocess": "repo_01",
+  "fine_tune_from_layer": "conv5_block1_0_bn",
+  "selected_checkpoint": "phase2",
+  "n_images": {
+    "train": 8185,
+    "val": 1755,
+    "test": 1753
+  },
+  "val": {
+    "val_loss": 0.03656776249408722,
+    "val_acc": 0.9874643683433533
+  },
+  "test_metrics": {
+    "accuracy": 0.9845978322875071,
+    "balanced_accuracy": 0.9844502954896838,
+    "macro_precision": 0.9848229501037424,
+    "macro_recall": 0.9844502954896838,
+    "macro_f1": 0.9845329106720474,
+    "weighted_f1": 0.9845387294448587,
+    "cohen_kappa": 0.9828844870119398,
+    "macro_auc_ovr": 0.999896924592434
+  },
+  "test_bootstrap_ci": {
+    "accuracy_ci95": [
+      0.9788933257273246,
+      0.9903023388476897
+    ],
+    "macro_f1_ci95": [
+      0.9784561435339432,
+      0.990178716312527
+    ]
+  },
+  "tf_version": "2.21.0"
+}
