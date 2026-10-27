@@ -1,0 +1,35 @@
+{
+  "run_name": "inceptionv3_seed42_20261023_161640",
+  "seed": 42,
+  "selected_checkpoint": "phase2",
+  "n_images": {
+    "train": 8185,
+    "val": 1755,
+    "test": 1753
+  },
+  "val": {
+    "val_loss": 0.024952750653028488,
+    "val_acc": 0.9914529919624329
+  },
+  "test_metrics": {
+    "accuracy": 0.9920136908157444,
+    "balanced_accuracy": 0.9918736539034875,
+    "macro_precision": 0.992006780392316,
+    "macro_recall": 0.9918736539034875,
+    "macro_f1": 0.9919090373331333,
+    "weighted_f1": 0.9919958654935374,
+    "cohen_kappa": 0.9911254660649061,
+    "macro_auc_ovr": 0.9999705342235835
+  },
+  "test_bootstrap_ci": {
+    "accuracy_ci95": [
+      0.9880205362236166,
+      0.9960068454078722
+    ],
+    "macro_f1_ci95": [
+      0.9877281316195378,
+      0.9960032045906818
+    ]
+  },
+  "tf_version": "2.21.0"
+}

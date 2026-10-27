@@ -1,0 +1,33 @@
+{
+  "DRIVE_DIR": "/content/drive/MyDrive/Hair-Disease-Research",
+  "SEED": 42,
+  "ZIP_PATH": "/content/drive/MyDrive/Hair-Disease-Research/data_processed/dataset_224_v3.zip",
+  "RESULTS_ROOT": "/content/drive/MyDrive/Hair-Disease-Research/results",
+  "DATA_DIR": "/content/dataset_224_v3",
+  "IMG_SIZE": [
+    224,
+    224
+  ],
+  "INPUT_SIZE": [
+    299,
+    299
+  ],
+  "MODEL_NAME": "inceptionv3",
+  "BATCH": 32,
+  "EPOCHS_P1": 10,
+  "LR_P1": 0.001,
+  "ES_PATIENCE_P1": 4,
+  "EPOCHS_P2": 25,
+  "LR_P2": 1e-05,
+  "FINE_TUNE_AT": 249,
+  "ES_PATIENCE_P2": 6,
+  "DROPOUT": 0.3,
+  "AUG": {
+    "flip": "horizontal",
+    "rotation": 0.05,
+    "zoom": 0.1,
+    "contrast": 0.1
+  },
+  "RUN_NAME": "inceptionv3_seed42_20261023_161640",
+  "RUN_DIR": "/content/drive/MyDrive/Hair-Disease-Research/results/inceptionv3_seed42_20261023_161640"
+}

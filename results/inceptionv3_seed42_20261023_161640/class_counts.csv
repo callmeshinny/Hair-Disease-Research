@@ -1,0 +1,12 @@
+,train,val,test,all
+Alopecia Areata,835,179,179,1193
+Contact Dermatitis,834,179,179,1192
+Folliculitis,834,179,178,1191
+Head Lice,836,179,179,1194
+Lichen Planus,836,179,179,1194
+Male Pattern Baldness,776,166,166,1108
+Psoriasis,787,169,169,1125
+Seborrheic Dermatitis,807,173,173,1153
+Telogen Effluvium,801,172,171,1144
+Tinea Capitis,839,180,180,1199
+TOTAL,8185,1755,1753,11693

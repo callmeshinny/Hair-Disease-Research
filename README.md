@@ -1,67 +1,66 @@
 # Hair Disease Research
 
 Reproducible TensorFlow/Keras experiments for classifying 10 hair-disease
-categories. The repository stores notebooks and lightweight evaluation
-artifacts; image datasets and large model files are kept outside GitHub.
+categories. All reported runs use seed `42`, the same v3 split, and separate
+train/validation/test data. The repository contains the notebooks and
+lightweight evaluation artifacts; image datasets and model binaries are kept
+outside GitHub.
 
-## Dataset protocol
+## Results at a glance
 
-The source dataset v3 contains **11,693 images**:
+The table reports the final metric from each completed evaluation. For
+single-model runs, metrics are from the held-out test split. For VGG16, only
+the completed five-fold CV ensemble is reported; its single-model 5% run was
+not complete and is not included.
 
-| Split | Images |
-|---|---:|
-| Train | 8,185 |
-| Validation | 1,755 |
-| Test | 1,753 |
-| **Total** | **11,693** |
+| Model | Dataset | Train | Validation | Test | Evaluation | Accuracy | Macro-F1 |
+|---|---|---:|---:|---:|---|---:|---:|
+| ResNet50V2 | fixed 5% subset | 410 | 88 | 88 | single model | 69.32% | 68.41% |
+| VGG16 | fixed 5% subset | 410 | 88 | 88 | 5-fold CV ensemble | 53.41% | 51.77% |
+| InceptionV3 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 99.20% | 99.19% |
+| DenseNet169 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 98.46% | 98.45% |
+| MobileNetV2 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 98.86% | 98.85% |
 
-The fixed 5% stratified subset contains **586 images**:
-**410 train, 88 validation, and 88 test**. A run must not be compared with
-another run without checking this split and dataset-size difference.
+The full dataset contains `11,693` images in total. The fixed 5% subset
+contains `586` images in total and is generated deterministically from the
+same v3 source split. Results trained on 5% and 100% must not be interpreted
+as a perfectly controlled model comparison; dataset size is a major
+experimental difference.
 
-## Recorded model results
+## Completed runs
 
-Accuracy and macro-F1 below are from the saved test metrics for the linked
-run. Percentages are rounded to two decimals.
+Only runs with final metrics, predictions, and evaluation outputs are included.
+Interrupted runs, smoke tests, incomplete configurations, and large model
+checkpoints are excluded.
 
-| Model | Dataset used | Train | Val | Test | Accuracy | Macro-F1 |
-|---|---|---:|---:|---:|---:|---:|
-| ResNet50V2 | Fixed 5% subset | 410 | 88 | 88 | 69.32% | 68.41% |
-| VGG16 | Full dataset v3 | 8,185 | 1,755 | 1,753 | 98.97% | 98.97% |
-| InceptionV3 | Full dataset v3 | 8,185 | 1,755 | 1,753 | 99.20% | 99.19% |
-| DenseNet169 | Full dataset v3 | 8,185 | 1,755 | 1,753 | 98.46% | 98.45% |
-| MobileNetV2 | Full dataset v3 | 8,185 | 1,755 | 1,753 | 98.86% | 98.85% |
+- [ResNet50V2 5% single model](results/resnet50v2_seed42_sub5pct_20261027_090212/)
+- [ResNet50V2 5% five-fold CV](results/resnet50v2_cv5_seed42_sub5pct_20261027_090425/)
+- [VGG16 5% five-fold CV](results/vgg16_cv5_seed42_sub5pct_20261026_083745/)
+- [InceptionV3 full-data single model](results/inceptionv3_seed42_20261023_161640/)
+- [DenseNet169 full-data single model](results/densenet169_seed42_20261023_165946/)
+- [MobileNetV2 full-data single model](results/mobilenetv2_seed42_20261021_042340/)
 
-**Important:** this is not a controlled leaderboard because ResNet50V2 was
-evaluated on 5% while the other listed single-model runs used the full
-dataset. For a fair model comparison, train every architecture on the same
-fixed subset or every architecture on the full dataset.
+Each result directory includes the applicable configuration, test metrics,
+classification report, predictions, confusion matrices, training history,
+and error-analysis files. Cross-validation directories additionally include
+fold metrics, out-of-fold predictions, and ensemble evaluation files.
 
 ## Notebooks
 
-- [`ResNet50V2_HD_local.ipynb`](notebooks/ResNet50V2_HD_local.ipynb) -
-  local Mac/M2 notebook using the fixed 5% subset.
-- [`VGG16_HD_local.ipynb`](notebooks/VGG16_HD_local.ipynb) - VGG16 local
-  training and evaluation pipeline.
-- [`DenseNet169_HD.ipynb`](notebooks/DenseNet169_HD.ipynb) - DenseNet169
-  training and evaluation pipeline.
-- [`MobileNetV2_HD.ipynb`](notebooks/MobileNetV2_HD.ipynb) - MobileNetV2
-  training and evaluation pipeline.
+- [ResNet50V2 local notebook](notebooks/ResNet50V2_HD_local.ipynb)
+- [VGG16 local notebook](notebooks/VGG16_HD_local.ipynb)
+- [InceptionV3 notebook](notebooks/InceptionV3_HD.ipynb)
+- [DenseNet169 notebook](notebooks/DenseNet169_HD.ipynb)
+- [MobileNetV2 notebook](notebooks/MobileNetV2_HD.ipynb)
 
-Each notebook records preprocessing, augmentation, training phases, model
-selection, metrics, confidence intervals, confusion matrices, and error
-analysis.
+The notebooks document preprocessing, augmentation, two-phase transfer
+learning, early stopping, checkpoint selection, and evaluation.
 
-## Results
+## Reproducibility and repository scope
 
-- [`ResNet50V2 5% single model`](results/resnet50v2_seed42_sub5pct_20261027_090212/)
-- [`ResNet50V2 5% five-fold CV`](results/resnet50v2_cv5_seed42_sub5pct_20261027_090425/)
-- [`DenseNet169 full-dataset run`](results/densenet169_seed42_20261023_165946/)
-- [`MobileNetV2 full-dataset run`](results/mobilenetv2_seed42_20261021_042340/)
-- Existing VGG16 artifacts are under `results/`; the linked configuration
-  identifies the dataset used by each run.
-
-Each result folder includes configuration, class counts, test metrics,
-classification reports, predictions, training history, confusion matrices,
-and error-analysis files where available. `.keras`, `.h5`, and other large
-model/checkpoint binaries are intentionally excluded.
+The 5% subset is selected with `SEED = 42` and
+`SUBSET_FRACTION = 0.05`. Full-data runs use
+`data_processed/dataset_224_v3`. Set the dataset path in the notebook before
+running. Dataset archives, image files, `.keras`/`.h5` checkpoints, caches,
+and editor files are intentionally ignored because of size and reproducibility
+storage constraints.
