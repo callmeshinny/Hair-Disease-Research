@@ -1,0 +1,16 @@
+                       precision    recall  f1-score   support
+
+      Alopecia Areata     0.8889    0.8889    0.8889         9
+   Contact Dermatitis     0.6364    0.7778    0.7000         9
+         Folliculitis     0.7273    0.8889    0.8000         9
+            Head Lice     0.8182    1.0000    0.9000         9
+        Lichen Planus     0.6000    0.3333    0.4286         9
+Male Pattern Baldness     1.0000    0.6250    0.7692         8
+            Psoriasis     0.5833    0.8750    0.7000         8
+Seborrheic Dermatitis     1.0000    0.3333    0.5000         9
+    Telogen Effluvium     0.4118    0.7778    0.5385         9
+        Tinea Capitis     1.0000    0.4444    0.6154         9
+
+             accuracy                         0.6932        88
+            macro avg     0.7666    0.6944    0.6841        88
+         weighted avg     0.7660    0.6932    0.6829        88

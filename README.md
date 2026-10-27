@@ -5,7 +5,7 @@ artifacts for the hair-disease classification experiments.
 
 ## Included experiments
 
-- `ResNet50V2` on the fixed 3% stratified subset:
+- `ResNet50V2` on the fixed 5% stratified subset:
   - single-model evaluation
   - five-fold cross-validation
 - `VGG16` evaluation and five-fold cross-validation on the fixed 5% subset
@@ -24,7 +24,7 @@ recorded in each run's `config.json` or `cv_config.json`.
 The subset folders are generated deterministically from the source dataset
 using the recorded seed and fraction:
 
-- ResNet50V2: `SUBSET_FRACTION = 0.03`
+- ResNet50V2: `SUBSET_FRACTION = 0.05`
 - VGG16: the recorded 5% run configuration
 
 ## Notebooks

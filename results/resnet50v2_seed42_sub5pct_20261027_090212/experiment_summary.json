@@ -1,0 +1,38 @@
+{
+  "run_name": "resnet50v2_seed42_sub5pct_20261027_090212",
+  "seed": 42,
+  "mixed_precision": false,
+  "preprocess": "tf",
+  "fine_tune_from_layer": "conv5_block1_preact_bn",
+  "selected_checkpoint": "phase2",
+  "n_images": {
+    "train": 410,
+    "val": 88,
+    "test": 88
+  },
+  "val": {
+    "val_loss": 1.618228554725647,
+    "val_acc": 0.6022727489471436
+  },
+  "test_metrics": {
+    "accuracy": 0.6931818181818182,
+    "balanced_accuracy": 0.6944444444444444,
+    "macro_precision": 0.7665805109922758,
+    "macro_recall": 0.6944444444444444,
+    "macro_f1": 0.6840537240537239,
+    "weighted_f1": 0.6829045954045955,
+    "cohen_kappa": 0.6590615583297459,
+    "macro_auc_ovr": 0.9457900404360057
+  },
+  "test_bootstrap_ci": {
+    "accuracy_ci95": [
+      0.6022727272727273,
+      0.7840909090909091
+    ],
+    "macro_f1_ci95": [
+      0.5780990997624292,
+      0.7612889628073451
+    ]
+  },
+  "tf_version": "2.15.1"
+}

@@ -1,0 +1,36 @@
+{
+  "fold": 0,
+  "model": "resnet50v2",
+  "chosen_phase": "phase1",
+  "inner_val_loss": {
+    "phase1": 0.9574774503707886,
+    "phase2": 1.0132083892822266
+  },
+  "epochs_run": {
+    "phase1": 5,
+    "phase2": 3
+  },
+  "n_fit": 358,
+  "n_inner_val": 40,
+  "n_heldout": 100,
+  "heldout": {
+    "accuracy": 0.46,
+    "macro_f1": 0.4081756338899195,
+    "weighted_f1": 0.41168212739641313,
+    "kappa": 0.39819458375125383,
+    "macro_auc": 0.9191625166344266,
+    "n": 100,
+    "errors": 54
+  },
+  "test": {
+    "accuracy": 0.4431818181818182,
+    "macro_f1": 0.35939373669808455,
+    "weighted_f1": 0.35786692556455396,
+    "kappa": 0.3804597701149426,
+    "macro_auc": 0.9367589662447257,
+    "n": 88,
+    "errors": 49
+  },
+  "minutes": 1.5,
+  "tf_version": "2.15.1"
+}
