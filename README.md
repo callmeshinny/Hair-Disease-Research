@@ -16,6 +16,7 @@ cross-validation runs are listed separately below.
 |---|---|---:|---:|---:|---|---:|---:|
 | ResNet50V2 | fixed 5% subset | 410 | 88 | 88 | single model | 69.32% | 68.41% |
 | VGG16 | fixed 5% subset | 410 | 88 | 88 | single model | 48.86% | 44.99% |
+| VGG16 | fixed 5% subset | 498 development / 88 test | — | 88 | 5-fold test ensemble | **76.14%** | **75.95%** |
 | InceptionV3 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 99.20% | 99.19% |
 | DenseNet169 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 98.46% | 98.45% |
 | MobileNetV2 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 98.86% | 98.85% |
@@ -35,7 +36,7 @@ checkpoints are excluded.
 - [ResNet50V2 5% single model](results/resnet50v2_seed42_sub5pct_20261027_090212/)
 - [ResNet50V2 5% five-fold CV](results/resnet50v2_cv5_seed42_sub5pct_20261027_090425/)
 - [VGG16 5% single model](results/vgg16_seed42_sub5pct_20261027_095513/)
-- [VGG16 5% five-fold CV](results/vgg16_cv5_seed42_sub5pct_20261026_083745/)
+- [VGG16 5% five-fold CV, final run](results/vgg16_cv5_seed42_sub5pct_20261027_122209/)
 - [InceptionV3 full-data single model](results/inceptionv3_seed42_20261023_161640/)
 - [DenseNet169 full-data single model](results/densenet169_seed42_20261023_165946/)
 - [MobileNetV2 full-data single model](results/mobilenetv2_seed42_20261021_042340/)
@@ -44,6 +45,30 @@ Each result directory includes the applicable configuration, test metrics,
 classification report, predictions, confusion matrices, training history,
 and error-analysis files. Cross-validation directories additionally include
 fold metrics, out-of-fold predictions, and ensemble evaluation files.
+
+### VGG16 five-fold CV details
+
+The final VGG16 CV run used the deterministic 5% subset (`586` images total):
+
+- Development data for cross-validation: `498` images.
+- Test data: `88` images.
+- Folds: `5`.
+- Batch size: `8`.
+- Phase 1: up to `3` epochs, early stopping patience `1`.
+- Phase 2: up to `5` epochs, early stopping patience `2`.
+- Backbone: ImageNet-pretrained VGG16 with VGG16
+  `preprocess_input`.
+- Pooled out-of-fold accuracy: `61.24%`.
+- Mean test accuracy across the five fold models: `62.50%`.
+- Final test ensemble accuracy: **`76.14%`** (`67/88` correct).
+- Final test ensemble macro-F1: **`75.95%`**.
+- Final test ensemble weighted-F1: `76.37%`.
+- Final test ensemble macro-AUC: `95.71%`.
+
+The `76.14%` value is the final reported VGG16 CV result because it comes
+from averaging the predictions of all five fold models on the untouched test
+set. It should not be compared directly with the single-model result or with
+the full-data models without accounting for the different training data.
 
 ## Notebooks
 

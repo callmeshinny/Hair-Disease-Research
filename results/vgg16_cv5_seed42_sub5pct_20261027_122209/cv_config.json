@@ -1,0 +1,49 @@
+{
+  "CV_SMOKE_TEST": false,
+  "CV_FOLDS_TO_RUN": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "CV_BATCH": 8,
+  "N_FOLDS": 5,
+  "CV_EPOCHS_P1": 3,
+  "CV_ES_P1": 1,
+  "CV_EPOCHS_P2": 5,
+  "CV_ES_P2": 2,
+  "GROUP_THR": 4,
+  "INNER_SPLITS": 10,
+  "CV_SAVE_FOLD_MODELS": false,
+  "SUFFIX": "_sub5pct",
+  "CV_FOLDS_DIR": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/cv5_folds_seed42_sub5pct",
+  "CV_RUN_NAME": "vgg16_cv5_seed42_sub5pct_20261027_122209",
+  "CV_RUN_DIR": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/vgg16_cv5_seed42_sub5pct_20261027_122209",
+  "CV_CKPT_DIR": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/vgg16_cv5_seed42_sub5pct_20261027_122209/_tmp_ckpt",
+  "CV_NUM_CLASSES": 10,
+  "CV_FOLDS_CSV": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/cv5_folds_seed42_sub5pct/folds.csv",
+  "CV_AUTOTUNE": -1,
+  "CV_METRICS": [
+    "accuracy",
+    "macro_f1",
+    "weighted_f1",
+    "kappa",
+    "macro_auc"
+  ],
+  "DATA_MODE": "subset",
+  "USE_SUBSET": true,
+  "SUBSET_FRACTION": 0.05,
+  "SEED": 42,
+  "MODEL_NAME": "vgg16",
+  "IMG_SIZE": [
+    224,
+    224
+  ],
+  "DENSE_UNITS": 512,
+  "DROPOUT": 0.5,
+  "LR_P1": 0.001,
+  "LR_P2": 1e-05,
+  "FINE_TUNE_FROM_LAYER": "block5_conv1",
+  "MIXED_PRECISION": false
+}

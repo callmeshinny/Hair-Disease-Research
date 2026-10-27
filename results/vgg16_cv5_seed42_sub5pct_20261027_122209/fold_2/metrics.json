@@ -1,0 +1,36 @@
+{
+  "fold": 2,
+  "model": "vgg16",
+  "chosen_phase": "phase2",
+  "inner_val_loss": {
+    "phase1": 3.6642799377441406,
+    "phase2": 2.767859697341919
+  },
+  "epochs_run": {
+    "phase1": 3,
+    "phase2": 3
+  },
+  "n_fit": 358,
+  "n_inner_val": 40,
+  "n_heldout": 100,
+  "heldout": {
+    "accuracy": 0.65,
+    "macro_f1": 0.6198951404059763,
+    "weighted_f1": 0.6294955987711406,
+    "kappa": 0.6102883865939206,
+    "macro_auc": 0.9370691144061931,
+    "n": 100,
+    "errors": 35
+  },
+  "test": {
+    "accuracy": 0.6363636363636364,
+    "macro_f1": 0.6185085048512159,
+    "weighted_f1": 0.619578503338094,
+    "kappa": 0.5956346927053418,
+    "macro_auc": 0.9360410073839663,
+    "n": 88,
+    "errors": 32
+  },
+  "minutes": 0.7,
+  "tf_version": "2.15.1"
+}
