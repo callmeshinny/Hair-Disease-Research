@@ -1,0 +1,16 @@
+{
+  "data_root": "/Users/nguyenbaochau/Downloads/Hair Diseases - Final",
+  "output": "cv_results_5fold_full_20261031",
+  "splitter": "stratified",
+  "n_splits": 5,
+  "epochs": 20,
+  "batch_size": 32,
+  "seed": 42,
+  "preprocessing": "repo",
+  "models": [
+    "MobileNetV2",
+    "InceptionV3",
+    "DenseNet169"
+  ],
+  "dry_run": false
+}
