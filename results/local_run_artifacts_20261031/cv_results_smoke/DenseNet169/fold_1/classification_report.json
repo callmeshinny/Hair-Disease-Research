@@ -1,0 +1,75 @@
+{
+  "Alopecia Areata": {
+    "precision": 0.989010989010989,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9045226130653267,
+    "support": 216.0
+  },
+  "Contact Dermatitis": {
+    "precision": 0.9641255605381166,
+    "recall": 0.9953703703703703,
+    "f1-score": 0.979498861047836,
+    "support": 216.0
+  },
+  "Folliculitis": {
+    "precision": 0.9930555555555556,
+    "recall": 0.6620370370370371,
+    "f1-score": 0.7944444444444444,
+    "support": 216.0
+  },
+  "Head Lice": {
+    "precision": 0.9715639810426541,
+    "recall": 0.9490740740740741,
+    "f1-score": 0.9601873536299765,
+    "support": 216.0
+  },
+  "Lichen Planus": {
+    "precision": 0.8523206751054853,
+    "recall": 0.9351851851851852,
+    "f1-score": 0.891832229580574,
+    "support": 216.0
+  },
+  "Male Pattern Baldness": {
+    "precision": 0.9385964912280702,
+    "recall": 0.9907407407407407,
+    "f1-score": 0.963963963963964,
+    "support": 216.0
+  },
+  "Psoriasis": {
+    "precision": 0.8235294117647058,
+    "recall": 0.8425925925925926,
+    "f1-score": 0.8329519450800915,
+    "support": 216.0
+  },
+  "Seborrheic Dermatitis": {
+    "precision": 0.6632653061224489,
+    "recall": 0.9027777777777778,
+    "f1-score": 0.7647058823529411,
+    "support": 216.0
+  },
+  "Telogen Effluvium": {
+    "precision": 0.8652173913043478,
+    "recall": 0.9212962962962963,
+    "f1-score": 0.8923766816143498,
+    "support": 216.0
+  },
+  "Tinea Capitis": {
+    "precision": 0.9473684210526315,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8866995073891626,
+    "support": 216.0
+  },
+  "accuracy": 0.8865740740740741,
+  "macro avg": {
+    "precision": 0.9008053782725005,
+    "recall": 0.8865740740740741,
+    "f1-score": 0.8871183482168666,
+    "support": 2160.0
+  },
+  "weighted avg": {
+    "precision": 0.9008053782725005,
+    "recall": 0.8865740740740741,
+    "f1-score": 0.8871183482168666,
+    "support": 2160.0
+  }
+}

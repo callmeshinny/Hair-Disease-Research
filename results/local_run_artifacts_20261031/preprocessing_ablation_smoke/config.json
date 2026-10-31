@@ -1,0 +1,19 @@
+{
+  "data_root": "/Users/nguyenbaochau/Downloads/Hair Diseases - Final",
+  "output": "/Users/nguyenbaochau/Downloads/Visual-Recognition-of-Hair-Disorders-Machine-Learning-for-Classification-main/preprocessing_ablation_smoke",
+  "n_splits": 5,
+  "epochs": 1,
+  "batch_size": 32,
+  "seed": 42,
+  "models": [
+    "MobileNetV2",
+    "InceptionV3",
+    "DenseNet169"
+  ],
+  "arms": [
+    "repo",
+    "imagenet"
+  ],
+  "folds_shared_across_arms": true,
+  "test_used_for_training_or_selection": false
+}

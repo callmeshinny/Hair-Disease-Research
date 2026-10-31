@@ -1,0 +1,11 @@
+,Alopecia Areata,Contact Dermatitis,Folliculitis,Head Lice,Lichen Planus,Male Pattern Baldness,Psoriasis,Seborrheic Dermatitis,Telogen Effluvium,Tinea Capitis
+Alopecia Areata,202,5,0,0,0,0,3,0,6,0
+Contact Dermatitis,0,216,0,0,0,0,0,0,0,0
+Folliculitis,0,0,207,0,1,0,6,2,0,0
+Head Lice,0,1,1,212,2,0,0,0,0,0
+Lichen Planus,0,0,1,0,212,0,0,1,0,2
+Male Pattern Baldness,5,0,0,0,0,186,0,0,25,0
+Psoriasis,1,7,6,0,1,0,188,9,4,0
+Seborrheic Dermatitis,0,5,9,6,3,0,32,159,2,0
+Telogen Effluvium,1,7,1,0,6,0,2,0,199,0
+Tinea Capitis,4,6,10,1,14,0,15,6,5,155
