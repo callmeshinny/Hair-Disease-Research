@@ -1,0 +1,6 @@
+comparison,pairs dist<=2,pairs dist<=4
+train vs val,0,0
+train vs test,0,0
+val vs test,0,0
+train vs val (flipped),0,0
+train vs test (flipped),0,0

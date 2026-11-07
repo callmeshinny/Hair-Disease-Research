@@ -1,0 +1,13 @@
+{
+  "selected": "phase2",
+  "phase1": {
+    "val_loss": 1.2884950637817383,
+    "val_acc": 0.7960113883018494,
+    "path": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/vgg16_seed42_20261107_211549/ckpt_phase1.weights.h5"
+  },
+  "phase2": {
+    "val_loss": 0.5806692838668823,
+    "val_acc": 0.9424501657485962,
+    "path": "/Users/nngoc/Documents/Hair Diseases/Hair-Disease-Research/results/vgg16_seed42_20261107_211549/ckpt_phase2.weights.h5"
+  }
+}

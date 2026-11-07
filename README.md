@@ -20,6 +20,7 @@ cross-validation runs are listed separately below.
 | InceptionV3 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 99.20% | 99.19% |
 | DenseNet169 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 98.46% | 98.45% |
 | MobileNetV2 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | 98.86% | 98.85% |
+| VGG16 | full v3 dataset | 8,185 | 1,755 | 1,753 | single model | **88.82%** | **88.53%** |
 
 The full dataset contains `11,693` images in total. The fixed 5% subset
 contains `586` images in total and is generated deterministically from the
@@ -40,6 +41,24 @@ checkpoints are excluded.
 - [InceptionV3 full-data single model](results/inceptionv3_seed42_20261023_161640/)
 - [DenseNet169 full-data single model](results/densenet169_seed42_20261023_165946/)
 - [MobileNetV2 full-data single model](results/mobilenetv2_seed42_20261021_042340/)
+- [VGG16 full-data single model](results/vgg16_seed42_20261107_211549/)
+
+### VGG16 full-data details
+
+The completed VGG16 run used all `11,693` images from the v3 split:
+
+- Train: `8,185`; validation: `1,755`; test: `1,753`.
+- Image size: `224 x 224`; batch size: `8`; seed: `42`.
+- Backbone: ImageNet-pretrained VGG16 with VGG16 `preprocess_input`.
+- Phase 1 trained the classification head; phase 2 fine-tuned `block5_conv1`.
+- Selected checkpoint: phase 2, using validation loss only.
+- Test accuracy: **`88.82%`**.
+- Test macro-F1: **`88.53%`**; balanced accuracy: `88.67%`.
+- Bootstrap 95% CI for accuracy: `87.28%`–`90.25%`.
+
+The result is a single fixed-split evaluation on the independent test set. It
+should not be conflated with the earlier VGG16 5% cross-validation result,
+which used a different training set and protocol.
 
 Each result directory includes the applicable configuration, test metrics,
 classification report, predictions, confusion matrices, training history,
